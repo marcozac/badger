@@ -45,21 +45,21 @@ $ git clone https://github.com/$GITHUB_USER/badger
 $ cd badger
 $ git remote add upstream git@github.com:dgraph-io/badger.git
 
-# Never push to the upstream master
+# Never push to the upstream main
 git remote set-url --push upstream no_push
 ```
 
 ### New branch for a new code
 
-Get your local master up to date:
+Get your local main up to date:
 
 ```sh
 $ git fetch upstream
-$ git checkout master
-$ git rebase upstream/master
+$ git checkout main
+$ git rebase upstream/main
 ```
 
-Create a new branch from the master:
+Create a new branch from the main:
 
 ```sh
 $ git checkout -b my_new_feature
